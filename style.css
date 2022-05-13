@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.ATMForm {
+    background-image: linear-gradient(to right bottom, rgba(255, 192, 203, 0.409) rgba());
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin: 6rem;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.Indicate {
+    font-size: 6.5rem;
+    background-image: linear-gradient(to right bottom, rgba(79, 48, 21, 0.75), rgba(13, 42, 123, 0.75));
+    margin: 0px;
+    padding: 9.6rem;
+}
+
+.Indicate label {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+    font-size: 3rem;
+
+}
+
+.Indicate input,
+.Indicate select {
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    width: 100%;
+    color: inherit;
+    padding: 2rem;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.btnForm {
+    width: 75%;
+    padding: 1.2rem;
+    align-self: flex-end;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.btnForm:hover {
+    background-color: #ffffff;
+    color: hsl(0, 0%, 0%);
+}
+
+.mainBox {
+    margin: 0;
+    padding: 9.6rem;
+    background-image: linear-gradient(to right bottom, rgba(79, 48, 21, 0.75), rgba(13, 42, 123, 0.75));
+    width: 100%;
+}
+
+
+.cardBox {
+    margin: 55px;
+    background-color: #f77500;
+    padding: 3.2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.Atm {
+    justify-content: space-evenly;
+}
+
+.AtmLogo {
+
+    flex-direction: end;
+    border-radius: 6px;
+    width: 7%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.list {
+
+    border-radius: 6px;
+    background-color: #f77500;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    z-index: 5;
+    background-color: black;
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.itemIcon {
+    margin-top: 4.4rem;
+}
+
+.AtmCard {
+    display: flex;
+    font-size: 2rem;
+}
+
+.cardNumeral {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.expDate {
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.logo {
+    justify-content: space-evenly;
+    width: 6rem;
+}
+
+.Name {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 6rem;
+}
+
+.MLogo {
+    justify-content: center;
+    height: 4rem;
+    margin-top: 1.6rem;
+    border-radius: 5px;
+    display: flex;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
