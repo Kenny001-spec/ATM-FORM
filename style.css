@@ -1,184 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
-html {
-    font-size: 62.5%;
-    overflow: hidden;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #ccc;
+}
 
-body {
-    height: 100vh;
-    background-color: burlywood;
+.ATMForm {
+    background-color: #0081a7;
+    margin: 6rem;
+    padding: 0 6rem;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
+}
+
+.invisible {
+    display: none;
+    opacity: 0;
+}
+
+.container,
+.ATM-Container {
+    padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-
-.ATMForm {
-    background-image: linear-gradient(to right bottom, rgba(255, 192, 203, 0.409) rgba());
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    margin: 6rem;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .Indicate {
-    font-size: 6.5rem;
-    background-image: linear-gradient(to right bottom, rgba(79, 48, 21, 0.75), rgba(13, 42, 123, 0.75));
-    margin: 0px;
-    padding: 9.6rem;
+    margin-bottom: 2.2rem;
+    font-size: 2rem;
 }
 
-.Indicate label {
-    margin-bottom: 1rem;
-    display: block;
-    text-align: left;
-    font-size: 3rem;
-
+input[type=text],
+select {
+    padding: 1.4rem 2.8rem;
+    font-size: 1.4rem;
 }
 
-.Indicate input,
-.Indicate select {
-    border-radius: 7px;
-    margin-bottom: 2rem;
+select {
     width: 100%;
-    color: inherit;
-    padding: 2rem;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
 }
 
-.btnForm {
-    width: 75%;
-    padding: 1.2rem;
-    align-self: flex-end;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
+input[type=submit] {
+    padding: 1.2rem 2.2rem;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #cfcfcf;
+    border: 0.2rem solid #bbb;
+    font-weight: 600;
 }
 
-.btnForm:hover {
-    background-color: #ffffff;
-    color: hsl(0, 0%, 0%);
+input[type=submit]:hover {
+    background-color: #bbb;
+}
+
+.atm {
+    color: #fff;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 4.5rem;
+    width: 42.5rem;
+    background-image: linear-gradient(to right bottom, rgba(79, 48, 21, 0.75), rgba(13, 42, 123, 0.75));
+    display: flex;
+    font-size: 1.8rem;
+    border-radius: 0.9rem;
+    -webkit-border-radius: 0.9rem;
+    -moz-border-radius: 0.9rem;
+    -ms-border-radius: 0.9rem;
+    -o-border-radius: 0.9rem;
+    transition: all 1.5s ease-out;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -ms-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+}
+
+.atmFunction {
+    padding: 3.5rem 4.5rem;
+    width: 42.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.9rem;
+    border: 2px dashed #bbb;
+    height: 25rem;
+    text-align: center;
+
 }
 
 .mainBox {
-    margin: 0;
-    padding: 9.6rem;
-    background-image: linear-gradient(to right bottom, rgba(79, 48, 21, 0.75), rgba(13, 42, 123, 0.75));
-    width: 100%;
-}
-
-
-.cardBox {
-    margin: 55px;
-    background-color: #f77500;
-    padding: 3.2rem;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
-
-.Atm {
-    justify-content: space-evenly;
-}
-
-.AtmLogo {
-
-    flex-direction: end;
-    border-radius: 6px;
-    width: 7%;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .list {
-
-    border-radius: 6px;
-    background-color: #f77500;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-
-.hidden {
-    display: none;
-}
-
-.overlay {
-    z-index: 5;
-    background-color: black;
-    backdrop-filter: blur(2px);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-.itemIcon {
-    margin-top: 4.4rem;
-}
-
-.AtmCard {
     display: flex;
-    font-size: 2rem;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    list-style-type: none;
 }
 
-.cardNumeral {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.expDate {
-    justify-content: center;
-    text-align: center;
-    margin: 2rem;
-    font-size: 2rem;
-}
-
-.logo {
-    justify-content: space-evenly;
-    width: 6rem;
-}
-
-.Name {
-    font-size: 2rem;
-    text-align: left;
-    margin-top: 6rem;
-}
-
-.MLogo {
-    justify-content: center;
-    height: 4rem;
-    margin-top: 1.6rem;
+.listIcons {
+    color: #fff;
     border-radius: 5px;
-    display: flex;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.listIcon {
+    color: #fff;
+}
+
+.mainBox>img {
+    height: 2.6rem;
+    width: 3rem;
+}
+
+.card-names {
+    justify-content: space-evenly;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    font-size: 2.2rem;
+    display: flex;
+
+}
+
+.account-type {
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-numeral {
+    letter-spacing: 0.4rem;
+    margin-top: 2.8rem;
+    color: #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.expiry {
+    text-align: center;
+}
+
+.expiry>span {
+    color: #bbb;
 }

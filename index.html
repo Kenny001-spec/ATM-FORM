@@ -12,63 +12,75 @@
 
 <body>
     <main>
-        <section class="ATMForm">
-            <div class="container">
-                <form action="ATMForm" class="Indicate">
-                    <div>
-                        <label for="firstName">Firstname</label>
-                        <input type="text" name="firstName" id="firstName">
-                    </div>
+        <section>
+            <div class="ATMForm">
+                <div class="container">
+                    <form action="ATMForm">
+                        <div class="Indicate">
+                            <label for="firstname">firstname</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                        </div>
 
-                    <div>
-                        <label for="lastName">Lastname</label>
-                        <input type="text" name="lastName" id="lastName">
-                    </div>
+                        <div class="Indicate">
+                            <label for="lastname">lastname</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                        </div>
 
-                    <div>
-                        <label for="options">kindly select your account-type</label>
-                        <select name="options" id="options">
-                            <option value="">Current</option>
-                            <option value="">Savings</option>
-                        </select>
-                    </div>
+                        <div class="Indicate">
+                            <label for="options">Select your account-type</label>
+                            <select name="account-type" id="account-type">
+                                <option value="savings">Savings</option>
+                                <option value="current">Current</option>
+                                <option value="business">Business</option>
+                            </select>
+                        </div>
 
-                    <button class="btnForm">Submit</button>
-
-
-                </form>
-            </div>
-            <div class="mainBox">
-                <div class="cardBox">
-                    <div class="Atm">
-                        <p class="AtmCard">Debit</p>
-                        <img src="img.png" alt="" class="AtmLogo">
-                    </div>
-                    <ul class="list">
-                        <li class="itemIcon">
-                            <ion-icon name="logo-rss"></ion-icon>
-                        </li>
-                    </ul>
-
-                    <p class="cardNumeral" id="digit">**** **** **** 4411</p>
-                    <p class="expDate" id="expDate">EXPIRES End Of 3/25</p>
-
-                    <div class="logo">
-                        <p class="Name">Abubakar Kehinde</p>
-                        <img src="masterCard logo.png" alt="" class="MLogo">
-
-                    </div>
-
-
+                        <div class="Indicate">
+                            <input type="submit" value="get new card" id="submit">
+                        </div>
+                    </form>
                 </div>
 
-            </div>
-            <div class="overlay hidden"></div>
 
+                <div class="ATM-Container">
+
+                    <div class="atmFunction">
+                        Your card will display here
+                    </div>
+
+                    <div class="atm invisible">
+                        <div class="mainBox">
+                            <span class="account-type">Savings</span>
+                            <img src="Access 1.png" alt="logo">
+                        </div>
+
+                        <ul class="list">
+                            <li class="listIcons">
+                                <ion-icon name="qr-scanner"></ion-icon>
+                            </li>
+                            <li class="listIcon">
+                                <ion-icon name="logo-rss"></ion-icon>
+                            </li>
+                        </ul>
+
+                        <div class="card-numeral">0013489645974688</div>
+                        <div class="expiry">
+                            <span>Expires:</span>
+                            <span class="expiry-date">03/25</span>
+                        </div>
+
+                        <div class="card-names">
+                            <span class="firstname">Firstname</span>
+                            <span class="lastname">Lastname</span>
+                            <img src="visa.png.jpg" alt="visaogo" class="visa-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script defer src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
